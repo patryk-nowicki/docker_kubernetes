@@ -10,8 +10,8 @@ simpleweb:
 eventualy some volumes mapping -v /x:x/y/x
 
 visits-completed:
-
-```
+ 
+``` 
 docker-compose up
 ```
 creating 2 services: 
