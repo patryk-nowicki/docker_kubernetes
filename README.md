@@ -10,6 +10,8 @@ docker build .
 docker run -p 8080:8080 <image_hash>
 ```
 
+To start app go to: ``localhost:8080`` or `127.0.0.1:8080`
+
 ## visits-completed:
  
 To run containers with docker compose 
@@ -31,6 +33,9 @@ services:
     ports:
       - "4001:8081"
 ```
+
+To start app go to: ``localhost:4001`` or `127.0.0.1:4001`
+
 
 Docker is creating 2 services : 
   1) redis-server (with default client 127.0.0.1:6379 for storing keys) 
