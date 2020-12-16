@@ -20,17 +20,8 @@ docker-compose up
 
 ports are mapped in dockerfile.yml
 
-```docker
-version: "3"
-services:
-  redis-server:
-    image: "redis"
-  node-app:
-    restart: on-failure
-    build: .
-    ports:
-      - "4001:8081"
-```
+
+@import "visits-completed/docker-compose.yml"
 
 
 
