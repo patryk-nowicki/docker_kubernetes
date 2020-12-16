@@ -1,13 +1,15 @@
 # Docker Kubernetes
 
 
+> simpleweb: 
 
-simpleweb: 
+```bash {cmd}
+docker build .
+docker run -p 8080:8080 <image_hash>
+```
+volumes -v /x:x/y/x
 
-`docker build .`
-`docker run -p 8080:8080 <image_hash>
 
-eventualy some volumes mapping -v /x:x/y/x
 
 visits-completed:
  
