@@ -3,7 +3,7 @@
 
 > simpleweb: 
 
-```{cmd}
+```bash {cmd}
 docker build .
 docker run -p 8080:8080 <image_hash>
 ```
@@ -41,6 +41,17 @@ to restart visits :D
   redis-cli set visits 0
 
 
-  
+```bash {cmd}
+ls .
+```
+
+```bash {cmd=true}
+ls .
+```
+
+```javascript {cmd="node"}
+const date = Date.now()
+console.log(date.toString())
+```
 
 
