@@ -1,21 +1,25 @@
 # Docker Kubernetes
 
 
-> simpleweb: 
+## simpleweb: 
 
-```bash {cmd}
+To run containers with mapped ports:
+
+```bash
 docker build .
 docker run -p 8080:8080 <image_hash>
 ```
-volumes -v /x:x/y/x
 
-
-
-visits-completed:
+## visits-completed:
  
-``` 
+To run containers with doceker compose 
+
+```bash
 docker-compose up
 ```
+
+ports are mapped in dockerfile.yml
+
 creating 2 services: 
   * redis-server -  with (default) client 127.0.0.1:6379 where visits key is stored 
   * node-app (see: index.js) 
