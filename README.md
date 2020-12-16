@@ -20,6 +20,20 @@ docker-compose up
 
 ports are mapped in dockerfile.yml
 
+```docker
+version: "3"
+services:
+  redis-server:
+    image: "redis"
+  node-app:
+    restart: on-failure
+    build: .
+    ports:
+      - "4001:8081"
+```
+
+
+
 creating 2 services: 
   * redis-server -  with (default) client 127.0.0.1:6379 where visits key is stored 
   * node-app (see: index.js) 
